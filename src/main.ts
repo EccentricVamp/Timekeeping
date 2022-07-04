@@ -14,13 +14,13 @@ const sheet = virtualSheet();
 sheet.reset();
 setup({ sheet });
 
-function render(context: RenderContext, render: InnerRenderFunction) {
-  const snapshot = context.state.get("twind") as unknown[] | null;
+function render(ctx: RenderContext, render: InnerRenderFunction) {
+  const snapshot = ctx.state.get("twind") as unknown[] | null;
   sheet.reset(snapshot || undefined);
   render();
-  context.styles.splice(0, context.styles.length, ...(sheet).target);
+  ctx.styles.splice(0, ctx.styles.length, ...(sheet).target);
   const newSnapshot = sheet.reset();
-  context.state.set("twind", newSnapshot);
+  ctx.state.set("twind", newSnapshot);
 }
 
 await start(manifest, { render });
