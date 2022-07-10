@@ -1,5 +1,5 @@
 import { Database, PostgresConnector } from "denodb/mod.ts";
-import { Person } from "@models/person.ts"
+import { Person } from "@models/person.ts";
 
 const connector = new PostgresConnector({
   database: "timekeeping",
