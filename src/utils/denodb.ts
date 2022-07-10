@@ -1,4 +1,5 @@
-import { Database, DataTypes, Model, PostgresConnector } from "denodb/mod.ts";
+import { Database, PostgresConnector } from "denodb/mod.ts";
+import { Person } from "@models/person.ts"
 
 const connector = new PostgresConnector({
   database: "timekeeping",
@@ -9,20 +10,4 @@ const connector = new PostgresConnector({
 
 const db = new Database(connector);
 
-class Person extends Model {
-  static table = "person";
-
-  static fields = {
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-    },
-
-    firstName: DataTypes.string(50),
-    lastName: DataTypes.string(50),
-  };
-}
-
-db.link([Person])
-
-export { db as DB, Person };
+db.link([Person]);

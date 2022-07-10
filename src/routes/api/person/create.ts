@@ -1,5 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
-import { Person } from "@denodb";
+import { Person } from "@models/person.ts";
 
 export const handler: Handlers = {
   async POST(req: Request) {
