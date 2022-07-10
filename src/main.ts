@@ -7,7 +7,11 @@
 import { start } from "$fresh/server.ts";
 import { virtualSheet } from "twind/sheets";
 import { setup, theme } from "@twind";
+import { DB } from "@denodb";
+import { Person } from "@models/person.ts";
 import routes from "./fresh.gen.ts";
+
+DB.link([Person]);
 
 const sheet = virtualSheet();
 sheet.reset();

@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 import { tw } from "@twind";
-import { Person } from "@denodb";
+import { Person } from "@models/person.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 
 export const handler: Handlers<Person[]> = {
