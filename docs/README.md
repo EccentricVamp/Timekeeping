@@ -2,7 +2,9 @@
 
 Web application for tracking work-hours.
 
-I'm using it to teach myself [Deno](https://deno.land/), [Fresh](https://fresh.deno.dev/), [TypeScript](https://typescriptlang.org/), [Twind](https://twind.dev/), and [Preact](https://preactjs.com/)
+I'm using it to teach myself [Deno](https://deno.land/),
+[Fresh](https://fresh.deno.dev/), [TypeScript](https://typescriptlang.org/),
+[Twind](https://twind.dev/), and [Preact](https://preactjs.com/)
 
 ### Usage
 
