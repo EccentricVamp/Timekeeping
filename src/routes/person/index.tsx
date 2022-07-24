@@ -1,6 +1,6 @@
 /** @jsx h */
 import { h } from "preact";
-import { tw } from "@twind";
+import { container, heading } from "@twind";
 import { Person } from "@models/person.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 
@@ -13,10 +13,11 @@ export const handler: Handlers<Person[]> = {
 
 export default function Page({ data }: PageProps<Person[]>) {
   return (
-    <main class={tw`p-4 mx-auto max-w-screen-md`}>
-      <h3 class={tw`text-xl font-medium`}>People</h3>
+    <main class={container()}>
+      <h3 class={heading()}>People</h3>
+      <a href="/person/create">Create</a>
       <ul>
-        {data.map((person) => <li>{person.Name}</li>)}
+        {data.map((person) => <li>{person.firstName}</li>)}
       </ul>
     </main>
   );
