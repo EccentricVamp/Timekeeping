@@ -4,5 +4,8 @@
     "deno.config": "src/deno.json",
     "deno.codeLens.implementations": true,
     "deno.codeLens.references": true,
-    "deno.codeLens.referencesAllFunctions": true
+    "deno.codeLens.referencesAllFunctions": true,
+    "[typescript][typescriptreact]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
 }
