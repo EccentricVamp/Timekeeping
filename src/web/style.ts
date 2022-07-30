@@ -1,24 +1,12 @@
-import * as colors from "twind/colors";
-import { IS_BROWSER } from "fresh/runtime.ts";
+import { IS_BROWSER } from "https://deno.land/x/fresh@1.0.1/runtime.ts";
 import { setup, tw } from "twind";
 
-if (IS_BROWSER) setup({ theme: { colors } });
+if (IS_BROWSER) setup();
 
 export function container() {
-  return tw`p-4 mx-auto max-w-screen-md`;
-}
-export function heading() {
-  return tw`text-xl font-medium`;
+  return tw(`p-4 mx-auto max-w-screen-md`);
 }
 
-export const theme = {
-  colors: {
-    blue: colors.blue,
-    black: colors.black,
-    gray: colors.gray,
-    green: colors.green,
-    white: colors.white,
-    yellow: colors.yellow,
-    transparent: "transparent",
-  },
-};
+export function heading() {
+  return tw(`text-xl font-medium`);
+}
