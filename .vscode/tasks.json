@@ -3,7 +3,7 @@
 	"tasks": [
 		{
 			"type": "deno",
-			"command": "watch",
+			"command": "run",
 			"options": {
 				"cwd": "${workspaceFolder}/src"
 			},
@@ -16,7 +16,7 @@
 			"problemMatcher": [
 				"$deno"
 			],
-			"label": "deno: run"
+			"label": "fresh: watch"
 		}
 	]
 }
