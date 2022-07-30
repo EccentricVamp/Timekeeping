@@ -1,8 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
-import { container, heading } from "@twind";
-import { Person } from "@models/person.ts";
-import { Handlers, PageProps } from "$fresh/server.ts";
+import { container, heading } from "../../style.ts";
+import { Person } from "domain/models/person.ts";
+import { Handlers, PageProps } from "fresh/server.ts";
 
 export const handler: Handlers<Person[]> = {
   async GET(_, ctx) {
