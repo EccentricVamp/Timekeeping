@@ -10,7 +10,7 @@ export default function App({ Component }: AppProps) {
       <Head>
         <title>Timekeeping</title>
       </Head>
-      <body class={tw('text-black dark:text-white bg-white dark:bg-black')}>
+      <body class={tw('text-slate-500 bg-slate-100')}>
         <Component />
       </body>
     </html>

@@ -1,8 +1,9 @@
 /** @jsx h */
 import { h } from "preact";
-import { container, heading } from "../../style.ts";
+import { button, container, Context, heading } from "../../style.ts";
 import { Handlers, PageProps } from "fresh/server.ts";
 import { Person } from "domain/models/person.ts";
+import { tw } from "twind";
 
 export const handler: Handlers = {
   async POST(req) {
@@ -15,23 +16,27 @@ export const handler: Handlers = {
 };
 
 export default function Page(props: PageProps) {
+  const label = tw("block");
+  const input = tw("mt-1 block bg-slate-100");
   return (
     <main class={container()}>
       <h3 class={heading()}>Create person</h3>
-      <form method="post">
-        <label>
+      <form method="post" class={tw("grid gap-6 my-3")}>
+        <label class={label}>
           ID
-          <input name="id" type="number" required />
+          <input name="id" type="number" class={input} required />
         </label>
-        <label>
+        <label class={label}>
           First name
-          <input name="firstName" type="text" maxLength={50} required />
+          <input name="firstName" type="text" class={input} maxLength={50} required />
         </label>
-        <label>
+        <label class={label}>
           Last name
-          <input name="lastName" type="text" maxLength={50} required />
+          <input name="lastName" type="text" class={input} maxLength={50} required />
         </label>
-        <button>Submit</button>
+        <div class={tw("block mt-2")}>
+          <button class={button(Context.Primary)}>Submit</button>
+        </div>
       </form>
     </main>
   );

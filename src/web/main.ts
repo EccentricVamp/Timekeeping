@@ -1,6 +1,6 @@
 import { start } from "fresh/server.ts";
 
-import { RestoreSnapshot, setup } from "twind";
+import { autoDarkColor, RestoreSnapshot, setup } from "twind";
 import presetTailwind from "@twind/preset-tailwind";
 import presetTailwindForm from "@twind/preset-tailwind-forms";
 
@@ -11,7 +11,10 @@ import routes from "./fresh.gen.ts";
 
 database.link([Person]);
 
-const tw = setup({ presets: [presetTailwind(), presetTailwindForm()] });
+const tw = setup({
+  presets: [presetTailwind(), presetTailwindForm()],
+  darkColor: autoDarkColor,
+});
 
 await start(routes, {
   render(ctx, innerRender) {

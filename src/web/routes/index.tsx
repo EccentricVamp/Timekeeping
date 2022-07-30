@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main class={container()}>
       <h3 class={heading()}>Timekeeping</h3>
-      <p class={tw("my-6")}>
+      <p class={tw("my-3")}>
         Welcome to `fresh`. Try update this message in the ./routes/index.tsx
         file, and refresh.
       </p>
