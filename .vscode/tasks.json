@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "deno",
+			"command": "watch",
+			"options": {
+				"cwd": "${workspaceFolder}/src"
+			},
+      "args": [
+        "--allow-all",
+        "--watch=web/static/,web/routes/",
+				"--import-map=${workspaceFolder}/src/import_map.json",
+				"web/main.dev.ts"
+      ],
+			"problemMatcher": [
+				"$deno"
+			],
+			"label": "deno: run"
+		}
+	]
+}
