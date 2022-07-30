@@ -12,7 +12,7 @@ Start the project:
 
 ```
 cd src
-deno run -allow-all --watch=static/,routes/ main.dev.ts
+deno run -allow-all --watch=web/static/,web/routes/ web/main.dev.ts
 ```
 
 This will watch the project directory and restart as necessary.

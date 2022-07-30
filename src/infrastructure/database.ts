@@ -7,4 +7,4 @@ const connector = new PostgresConnector({
   password: "postgres",
 });
 
-export const db = new Database(connector);
+export const database = new Database(connector);

@@ -1,8 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
-import { container, heading } from "@twind";
-import { Handlers, PageProps } from "$fresh/server.ts";
-import { Person } from "@models/person.ts";
+import { container, heading } from "../../style.ts";
+import { Handlers, PageProps } from "fresh/server.ts";
+import { Person } from "domain/models/person.ts";
 
 export const handler: Handlers = {
   async POST(req) {

@@ -4,14 +4,15 @@
 /// <reference lib="deno.ns" />
 /// <reference lib="deno.unstable" />
 
-import { start } from "$fresh/server.ts";
+import { start } from "fresh/server.ts";
+import { setup } from "twind";
 import { virtualSheet } from "twind/sheets";
-import { setup, theme } from "@twind";
-import { db } from "@denodb";
-import { Person } from "@models/person.ts";
+import { theme } from "./style.ts";
+import { database } from "infrastructure/database.ts";
+import { Person } from "domain/models/person.ts";
 import routes from "./fresh.gen.ts";
 
-db.link([Person]);
+database.link([Person]);
 
 const sheet = virtualSheet();
 sheet.reset();
