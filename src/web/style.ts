@@ -1,4 +1,4 @@
-import { IS_BROWSER } from "https://deno.land/x/fresh@1.0.1/runtime.ts";
+import { IS_BROWSER } from "fresh/runtime.ts";
 import { setup, tw } from "twind";
 
 if (IS_BROWSER) setup();
