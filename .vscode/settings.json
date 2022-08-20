@@ -7,4 +7,14 @@
     "[json][typescript][typescriptreact]": {
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "main.ts": "main.*.ts"
+    },
+    "files.exclude": {
+        "**/fresh.gen.ts": true
+    },
+    "search.exclude": {
+        "src/vendor": true
+    },
 }
