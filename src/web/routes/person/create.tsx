@@ -1,6 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
-import { button, container, Context, heading } from "../../style.ts";
+
+import { Container } from "components/container.tsx";
+import { PageHeading } from "components/page-heading.tsx"
 import { Handlers, PageProps } from "fresh/server.ts";
 import { Person } from "domain/models/person.ts";
 import { tw } from "twind";
@@ -19,8 +21,8 @@ export default function Page(props: PageProps) {
   const label = tw("block");
   const input = tw("mt-1 block bg-slate-100");
   return (
-    <main class={container()}>
-      <h3 class={heading()}>Create person</h3>
+    <Container>
+      <PageHeading value="Create person" />
       <form method="post" class={tw("grid gap-6 my-3")}>
         <label class={label}>
           ID
@@ -35,9 +37,9 @@ export default function Page(props: PageProps) {
           <input name="lastName" type="text" class={input} maxLength={50} required />
         </label>
         <div class={tw("block mt-2")}>
-          <button class={button(Context.Primary)}>Submit</button>
+          <button class={tw("bg-sky-400 text-white p-2 rounded")}>Submit</button>
         </div>
       </form>
-    </main>
+    </Container>
   );
 }

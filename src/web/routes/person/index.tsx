@@ -1,9 +1,11 @@
 /** @jsx h */
 import { h } from "preact";
-import { container, heading, link, table, tableBody, tableData } from "../../style.ts";
+import { tw } from "twind";
+import { Container } from "components/container.tsx";
+import { PageHeading } from "components/page-heading.tsx";
+import { Table, TableBody, TableHead, TableRow } from "components/table.tsx";
 import { Person } from "domain/models/person.ts";
 import { Handlers, PageProps } from "fresh/server.ts";
-import { tw } from "twind";
 
 export const handler: Handlers<Person[]> = {
   async GET(_, ctx) {
@@ -13,22 +15,28 @@ export const handler: Handlers<Person[]> = {
 };
 
 export default function Page({ data }: PageProps<Person[]>) {
-  const td = tableData();
   return (
-    <main class={container()}>
-      <h3 class={heading()}>People</h3>
-      <a href="/person/create" class={link()}>Create</a>
-      <table class={table()}>
-        <tbody class={tableBody()}>  
+    <Container>
+      <PageHeading value="People" />
+      <a href="/person/create" class={tw("text-sky-500")}>Create</a>
+      <Table>
+        <TableHead>
+          <TableRow>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+          </TableRow>
+        </TableHead>
+        <TableBody>  
           {data.map((person) => (
-            <tr>
-              <td class={td}>{person.id}</td>
-              <td class={td}>{person.lastName}</td>
-              <td class={td}>{person.firstName}</td>
-            </tr>
+            <TableRow>
+              <td>{person.id}</td>
+              <td>{person.lastName}</td>
+              <td>{person.firstName}</td>
+            </TableRow>
           ))}
-        </tbody>
-      </table>
-    </main>
+        </TableBody>
+      </Table>
+    </Container>
   );
 }
