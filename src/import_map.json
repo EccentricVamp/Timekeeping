@@ -5,6 +5,7 @@
     
     "domain/": "./domain/",
     "infrastructure/": "./infrastructure/",
+    "components/": "./web/components/",
 
     "preact": "https://esm.sh/preact@10.8.2",
     "preact/": "https://esm.sh/preact@10.8.2/",
