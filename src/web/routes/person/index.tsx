@@ -1,5 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
 import { tw } from "twind";
 import { Container } from "components/container.tsx";
 import { PageHeading } from "components/page-heading.tsx";
@@ -27,7 +25,7 @@ export default function Page({ data }: PageProps<Person[]>) {
             <th>Last name</th>
           </TableRow>
         </TableHead>
-        <TableBody>  
+        <TableBody>
           {data.map((person) => (
             <TableRow>
               <td>{person.id}</td>

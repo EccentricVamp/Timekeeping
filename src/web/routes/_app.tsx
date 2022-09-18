@@ -1,6 +1,4 @@
-/** @jsx h */
-import { h } from "preact";
-import { Head } from "fresh/runtime.ts"
+import { Head } from "fresh/runtime.ts";
 import { AppProps } from "fresh/server.ts";
 import { tw } from "twind";
 
@@ -10,7 +8,7 @@ export default function App({ Component }: AppProps) {
       <Head>
         <title>Timekeeping</title>
       </Head>
-      <body class={tw('text-slate-500 bg-slate-100')}>
+      <body class={tw("text-slate-500 bg-slate-100")}>
         <Component />
       </body>
     </html>

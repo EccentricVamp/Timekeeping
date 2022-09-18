@@ -1,5 +1,3 @@
-/** @jsx h */
-import { h } from "preact";
 import { tw } from "twind";
 import { Container } from "components/container.tsx";
 import { PageHeading } from "components/page-heading.tsx";
