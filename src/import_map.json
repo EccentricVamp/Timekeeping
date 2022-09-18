@@ -1,15 +1,15 @@
 {
   "imports": {
     "denodb/": "https://deno.land/x/denodb@v1.0.40/",
-    "fresh/": "https://deno.land/x/fresh@1.0.1/",
-    
+    "fresh/": "https://deno.land/x/fresh@1.1.1/",
+
     "domain/": "./domain/",
     "infrastructure/": "./infrastructure/",
     "components/": "./web/components/",
 
-    "preact": "https://esm.sh/preact@10.8.2",
-    "preact/": "https://esm.sh/preact@10.8.2/",
-    "preact-render-to-string": "https://esm.sh/preact-render-to-string@5.2.0?external=preact",
+    "preact": "https://esm.sh/preact@10.11.0",
+    "preact/": "https://esm.sh/preact@10.11.0/",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4",
 
     "twind": "https://esm.sh/twind@1.0.0-next.38",
     "@twind/preset-tailwind": "https://esm.sh/@twind/preset-tailwind@1.0.0-next.38?external=twind",
