@@ -5,7 +5,9 @@
     "deno.codeLens.references": true,
     "deno.codeLens.referencesAllFunctions": true,
     "[json][typescript][typescriptreact]": {
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "denoland.vscode-deno",
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true
     },
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.patterns": {
