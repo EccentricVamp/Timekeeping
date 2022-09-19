@@ -2,13 +2,17 @@
   "imports": {
     "denodb/": "https://deno.land/x/denodb@v1.0.40/",
     "fresh/": "https://deno.land/x/fresh@1.1.1/",
+    "freshwind/": "https://deno.land/x/freshwind@1.0.1/",
 
     "domain/": "../domain/",
     "infrastructure/": "../infrastructure/",
     "components/": "./components/",
 
-    "twind": "https://esm.sh/twind@0.16.17",
-    "twind/": "https://esm.sh/twind@0.16.17/",
+    "twind": "https://esm.sh/twind@1.0.0-next.38",
+    "twind/": "https://esm.sh/twind@1.0.0-next.38/",
+    "@twind/preset-tailwind": "https://esm.sh/*@twind/preset-tailwind@1.0.0-next.38",
+    "@twind/preset-tailwind/": "https://esm.sh/*@twind/preset-tailwind@1.0.0-next.38/",
+    "@twind/preset-tailwind-forms": "./vendor/preset-tailwind-forms.ts",
 
     "preact": "https://esm.sh/preact@10.11.0",
     "preact/": "https://esm.sh/preact@10.11.0/",
