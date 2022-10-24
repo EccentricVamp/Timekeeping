@@ -1,4 +1,4 @@
-import { start } from "fresh/server.ts";
+import { start } from "$fresh/server.ts";
 import freshwind from "freshwind/freshwind.ts";
 import twindConfig from "./twind.config.ts";
 import manifest from "./fresh.gen.ts";

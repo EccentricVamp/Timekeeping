@@ -1,6 +1,6 @@
 import { Container } from "components/container.tsx";
 import { PageHeading } from "components/page-heading.tsx";
-import { Handlers, PageProps } from "fresh/server.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
 import { Person } from "domain/models/person.ts";
 import { tw } from "twind";
 

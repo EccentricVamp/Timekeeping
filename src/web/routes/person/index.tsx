@@ -3,7 +3,7 @@ import { Container } from "components/container.tsx";
 import { PageHeading } from "components/page-heading.tsx";
 import { Table, TableBody, TableHead, TableRow } from "components/table.tsx";
 import { Person } from "domain/models/person.ts";
-import { Handlers, PageProps } from "fresh/server.ts";
+import { Handlers, PageProps } from "$fresh/server.ts";
 
 export const handler: Handlers<Person[]> = {
   async GET(_, ctx) {

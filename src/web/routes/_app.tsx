@@ -1,5 +1,5 @@
-import { Head } from "fresh/runtime.ts";
-import { AppProps } from "fresh/server.ts";
+import { Head } from "$fresh/runtime.ts";
+import { AppProps } from "$fresh/server.ts";
 import { tw } from "twind";
 
 export default function App({ Component }: AppProps) {
