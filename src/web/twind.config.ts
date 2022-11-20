@@ -1,10 +1,11 @@
-import { autoDarkColor } from "twind";
+import { autoDarkColor, defineConfig } from "@twind/core";
+import presetAutoprefix from "@twind/preset-autoprefix";
 import presetTailwind from "@twind/preset-tailwind";
 import presetTailwindForms from "@twind/preset-tailwind-forms";
-import { FreshwindUserConfig } from "freshwind/shared.ts";
 
-export default {
-  presets: [presetTailwind(), presetTailwindForms()],
+export default defineConfig({
+  presets: [presetAutoprefix(), presetTailwind(), presetTailwindForms()],
   darkColor: autoDarkColor,
-  selfURL: import.meta.url,
-} as FreshwindUserConfig;
+});
+
+export const configURL = import.meta.url;

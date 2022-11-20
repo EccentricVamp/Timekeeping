@@ -1,21 +1,28 @@
 {
   "imports": {
-    "denodb/": "https://deno.land/x/denodb@v1.0.40/",
+    "denodb/": "https://deno.land/x/denodb@v1.1.0/",
     "$fresh/": "https://deno.land/x/fresh@1.1.2/",
-    "freshwind/": "https://deno.land/x/freshwind@3.0.0-beta.5/",
+    "freshwind/": "https://deno.land/x/freshwind@3.0.1-beta.5/",
 
     "domain/": "../domain/",
     "infrastructure/": "../infrastructure/",
     "components/": "./components/",
 
-    "twind": "https://esm.sh/twind@1.0.0-next.39",
-    "twind/": "https://esm.sh/twind@1.0.0-next.39/",
-    "@twind/preset-tailwind": "https://esm.sh/*@twind/preset-tailwind@1.0.0-next.39",
-    "@twind/preset-tailwind/": "https://esm.sh/*@twind/preset-tailwind@1.0.0-next.39/",
-    "@twind/preset-tailwind-forms": "./vendor/preset-tailwind-forms.ts",
+    "@twind/core": "https://esm.sh/@twind/core@1.0.1",
+    "@twind/core/": "https://esm.sh/@twind/core@1.0.1/",
 
-    "preact": "https://esm.sh/preact@10.11.0",
-    "preact/": "https://esm.sh/preact@10.11.0/",
-    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.4"
+    "@twind/preset-tailwind": "https://esm.sh/*@twind/preset-tailwind@1.0.1",
+    "@twind/preset-tailwind/": "https://esm.sh/*@twind/preset-tailwind@1.0.1/",
+
+    "style-vendorizer": "https://esm.sh/style-vendorizer@2.2.3",
+    "@twind/preset-autoprefix": "https://esm.sh/*@twind/preset-autoprefix@1.0.1",
+    "@twind/preset-autoprefix/": "https://esm.sh/*@twind/preset-autoprefix@1.0.1/",
+
+    "@twind/preset-tailwind-forms": "https://esm.sh/*@twind/preset-tailwind-forms@1.0.1",
+    "@twind/preset-tailwind-forms/": "https://esm.sh/*@twind/preset-tailwind-forms@1.0.1/",
+
+    "preact": "https://esm.sh/preact@10.11.3",
+    "preact/": "https://esm.sh/preact@10.11.3/",
+    "preact-render-to-string": "https://esm.sh/*preact-render-to-string@5.2.6"
   }
 }

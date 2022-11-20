@@ -1,4 +1,3 @@
-import { tw } from "twind";
 import { Container } from "components/container.tsx";
 import { PageHeading } from "components/page-heading.tsx";
 import { Table, TableBody, TableHead, TableRow } from "components/table.tsx";
@@ -16,7 +15,7 @@ export default function Page({ data }: PageProps<Person[]>) {
   return (
     <Container>
       <PageHeading value="People" />
-      <a href="/person/create" class={tw("text-sky-500")}>Create</a>
+      <a href="/person/create" class="text-sky-500">Create</a>
       <Table>
         <TableHead>
           <TableRow>

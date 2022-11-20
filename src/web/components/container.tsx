@@ -1,4 +1,3 @@
-import { tw } from "twind";
 import { ComponentChildren } from "preact";
 
 type Props = {
@@ -7,5 +6,5 @@ type Props = {
 };
 
 export function Container({ isFluid = false, children }: Props) {
-  return <main class={tw("p-4 mx-auto max-w-screen-md")}>{children}</main>;
+  return <main class="p-4 mx-auto max-w-screen-md">{children}</main>;
 }
