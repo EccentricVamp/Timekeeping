@@ -2,7 +2,7 @@
   "imports": {
     "denodb/": "https://deno.land/x/denodb@v1.0.40/",
     "$fresh/": "https://deno.land/x/fresh@1.1.2/",
-    "freshwind/": "https://deno.land/x/freshwind@2.0.0/",
+    "freshwind/": "https://deno.land/x/freshwind@3.0.0-beta.5/",
 
     "domain/": "../domain/",
     "infrastructure/": "../infrastructure/",

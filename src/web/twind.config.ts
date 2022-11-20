@@ -1,8 +1,10 @@
-import { autoDarkColor, TwindUserConfig } from "twind";
+import { autoDarkColor } from "twind";
 import presetTailwind from "@twind/preset-tailwind";
 import presetTailwindForms from "@twind/preset-tailwind-forms";
+import { FreshwindUserConfig } from "freshwind/shared.ts";
 
 export default {
   presets: [presetTailwind(), presetTailwindForms()],
   darkColor: autoDarkColor,
-} as TwindUserConfig;
+  selfURL: import.meta.url,
+} as FreshwindUserConfig;
